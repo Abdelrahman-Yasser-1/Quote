@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:backgroundTint="@color/card_color"
+    app:cardCornerRadius="12dp"
+    app:cardElevation="8dp"
+    app:cardPreventCornerOverlap="true"
+    android:layout_margin="8dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_quote"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="serif"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="18sp"/>
+
+        <TextView
+            android:id="@+id/tv_author"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:textColor="@color/card_author_text_color"
+            android:textSize="16sp"
+            android:layout_below="@+id/tv_quote"/>
+
+        <ImageButton
+            android:id="@+id/btn_un_save"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/tv_quote"
+            android:background="@drawable/ic_bookmark_filled"
+            android:layout_margin="8dp"
+            android:tooltipText="UnSave"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
